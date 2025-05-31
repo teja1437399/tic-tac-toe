@@ -4,4 +4,15 @@ if (checkWinner()) {
   status.style.textShadow = "0 0 10px #00ff00";
   gameOver = true;
   return;
+}if (checkWinner()) {
+  status.innerText = `Player ${currentPlayer} wins!`;
+  gameOver = true;
+  return;
+}if (checkWinner()) {
+  status.innerText = `Player ${currentPlayer} wins!`;
+  status.style.color = "#00ff00";
+  status.style.textShadow = "0 0 10px #00ff00";
+  status.id = "winner-glow";  // Add glow effect
+  gameOver = true;
+  return;
 }
